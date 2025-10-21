@@ -5,18 +5,18 @@ import re
 app = Flask(__name__)
 
 # Real flag (hidden in code)
-REAL_FLAG = "Fl4g-X{c00k13_hunt3r_rcb_ch4mp10n_2025}"
+REAL_FLAG = "Fl4g-X{c00k13_hunt3r_pbks_ch4mp10n_2025}"
 # Fake flag for flag.txt
-FAKE_FLAG = "RCB{n1c3_try_but_keep_l00k1ng_d33p3r}"
+FAKE_FLAG = "PBKS{n1c3_try_but_keep_l00k1ng_d33p3r}"
 # Secret PIN
-SECRET_PIN = "kohli18"
+SECRET_PIN = "shikhar45"
 
 @app.route('/')
 def index():
     return '''<!DOCTYPE html>
 <html>
 <head>
-    <title>RCB Fan Portal</title>
+    <title>Punjab Kings Fan Portal</title>
     <style>
         * {
             margin: 0;
@@ -29,7 +29,7 @@ def index():
         }
         body {
             font-family: Arial, sans-serif;
-            background: linear-gradient(135deg, #d4145a 0%, #000000 100%);
+            background: linear-gradient(135deg, #DD1F2D 0%, #9E1B32 100%);
             background-attachment: fixed;
             color: white;
             display: flex;
@@ -58,8 +58,8 @@ def index():
             border: none;
         }
         input[type="submit"] {
-            background: #fdb913;
-            color: black;
+            background: #C0C0C0;
+            color: #DD1F2D;
             padding: 10px 30px;
             border: none;
             border-radius: 5px;
@@ -68,18 +68,18 @@ def index():
             margin-top: 10px;
         }
         input[type="submit"]:hover {
-            background: #d4145a;
+            background: #DD1F2D;
             color: white;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>🏏 Welcome to RCB Fan Portal!</h1>
+        <h1>🏏 Welcome to Punjab Kings Fan Portal!</h1>
         <p>Predict the next match outcome and win prizes!</p>
         <form method="POST" action="/predict">
             <label>Enter your match prediction:</label><br>
-            <input type="text" name="prediction" placeholder="e.g., RCB will win by 50 runs"><br>
+            <input type="text" name="prediction" placeholder="e.g., PBKS will win by 50 runs"><br>
             <input type="submit" value="Submit Prediction">
         </form>
     </div>
@@ -108,7 +108,7 @@ def predict():
         }
         body {
             font-family: Arial, sans-serif;
-            background: linear-gradient(135deg, #d4145a 0%, #000000 100%);
+            background: linear-gradient(135deg, #DD1F2D 0%, #9E1B32 100%);
             background-attachment: fixed;
             color: white;
             display: flex;
@@ -128,8 +128,8 @@ def predict():
             margin-bottom: 15px;
         }
         .flag {
-            background: #fdb913;
-            color: black;
+            background: #C0C0C0;
+            color: #DD1F2D;
             padding: 20px;
             border-radius: 5px;
             font-size: 20px;
@@ -139,7 +139,7 @@ def predict():
             word-break: break-all;
         }
         a {
-            color: #fdb913;
+            color: #C0C0C0;
             text-decoration: none;
             font-weight: bold;
             display: inline-block;
@@ -182,7 +182,7 @@ def predict():
         }
         body {
             font-family: Arial, sans-serif;
-            background: linear-gradient(135deg, #d4145a 0%, #000000 100%);
+            background: linear-gradient(135deg, #DD1F2D 0%, #9E1B32 100%);
             background-attachment: fixed;
             color: white;
             display: flex;
@@ -205,7 +205,7 @@ def predict():
             margin: 10px 0;
         }
         a {
-            color: #fdb913;
+            color: #C0C0C0;
             text-decoration: none;
             font-weight: bold;
             display: inline-block;
@@ -242,7 +242,7 @@ def predict():
         }
         body {
             font-family: Arial, sans-serif;
-            background: linear-gradient(135deg, #d4145a 0%, #000000 100%);
+            background: linear-gradient(135deg, #DD1F2D 0%, #9E1B32 100%);
             background-attachment: fixed;
             color: white;
             display: flex;
@@ -262,8 +262,8 @@ def predict():
             margin-bottom: 15px;
         }
         .flag {
-            background: #fdb913;
-            color: black;
+            background: #C0C0C0;
+            color: #DD1F2D;
             padding: 15px;
             border-radius: 5px;
             font-weight: bold;
@@ -272,7 +272,7 @@ def predict():
             word-break: break-all;
         }
         a {
-            color: #fdb913;
+            color: #C0C0C0;
             text-decoration: none;
             font-weight: bold;
             display: inline-block;
@@ -309,7 +309,7 @@ def predict():
         }
         body {
             font-family: Arial, sans-serif;
-            background: linear-gradient(135deg, #d4145a 0%, #000000 100%);
+            background: linear-gradient(135deg, #DD1F2D 0%, #9E1B32 100%);
             background-attachment: fixed;
             color: white;
             display: flex;
@@ -333,7 +333,7 @@ def predict():
             word-wrap: break-word;
         }
         a {
-            color: #fdb913;
+            color: #C0C0C0;
             text-decoration: none;
             font-weight: bold;
             display: inline-block;
@@ -357,7 +357,7 @@ def server():
     html = '''<!DOCTYPE html>
 <html>
 <head>
-    <title>RCB Server Stats</title>
+    <title>PBKS Server Stats</title>
     <style>
         * {
             margin: 0;
@@ -370,7 +370,7 @@ def server():
         }
         body {
             font-family: Arial, sans-serif;
-            background: linear-gradient(135deg, #d4145a 0%, #000000 100%);
+            background: linear-gradient(135deg, #DD1F2D 0%, #9E1B32 100%);
             background-attachment: fixed;
             color: white;
             display: flex;
@@ -400,14 +400,14 @@ def server():
         th, td {
             padding: 12px;
             text-align: left;
-            border-bottom: 1px solid #fdb913;
+            border-bottom: 1px solid #C0C0C0;
         }
         th {
-            background: #d4145a;
+            background: #DD1F2D;
             color: white;
         }
         a {
-            color: #fdb913;
+            color: #C0C0C0;
             text-decoration: none;
             font-weight: bold;
             display: inline-block;
@@ -417,7 +417,7 @@ def server():
 </head>
 <body>
     <div class="container">
-        <h1>📊 RCB Server Statistics</h1>
+        <h1>📊 PBKS Server Statistics</h1>
         <p>Server performance metrics and information</p>
         
         <table>
@@ -431,23 +431,23 @@ def server():
             </tr>
             <tr>
                 <td>Total Predictions</td>
-                <td>1,847</td>
+                <td>2,145</td>
             </tr>
             <tr>
                 <td>Active Users</td>
-                <td>234</td>
+                <td>312</td>
             </tr>
             <tr>
                 <td>Server Uptime</td>
-                <td>99.8%</td>
+                <td>99.7%</td>
             </tr>
             <tr>
                 <td>Last Match</td>
-                <td>RCB vs MI - RCB Won! 🎉</td>
+                <td>PBKS vs CSK - PBKS Won! 🎉</td>
             </tr>
             <tr>
                 <td>Team's Message</td>
-                <td>"True RCB fans know — when the match ends, the memories stay cached."</td>
+                <td>"True Punjab Kings fans know — when the match ends, the memories stay cached."</td>
             </tr>
         </table>
         
@@ -463,7 +463,7 @@ def server():
     encoded_secret = base64.b64encode(SECRET_PIN.encode()).decode()
     
    
-    response.set_cookie('rcb_secret', encoded_secret, httponly=False)
+    response.set_cookie('pbks_secret', encoded_secret, httponly=False)
     
     return response
 
